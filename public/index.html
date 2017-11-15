@@ -1,0 +1,41 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Search Abstraction Layer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+
+    <main>
+      <h1>
+        Image Search Abstraction Layer
+      </h1>
+      <p>
+        Enter a term and eventually an offset in the URL.<br/>It will return results from the Qwant API.
+        <br/><br/>
+        Try these different URLs:
+      </p>
+      <ul>
+        <li><a href="/api/search/pikachu">https://bilda-sercxilo-serveto.glitch.me/api/search/pikachu</a></li>
+        <li><a href="/api/search/pikachu?offset=10">https://bilda-sercxilo-serveto.glitch.me/api/search/pikachu?offset=10</a></li>
+        <li><a href="/api/latest">https://bilda-sercxilo-serveto.glitch.me/api/latest</a></li>
+      </ul>
+    </main>
+    
+    <script src="/assets/app.js"></script>
+
+  </body>
+</html>
